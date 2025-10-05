@@ -55,7 +55,7 @@ client.on('messageCreate', async (message) => {
         connection.destroy();
       });
 
-      message.reply("🎶 Never gonna give you up!");
+      message.reply("ok !stop om op te rotten");
     } catch (error) {
       console.error(error);
       message.reply("Couldn't play the song. Check console for details.");
@@ -69,7 +69,7 @@ client.on('messageCreate', async (message) => {
 
     if (connection) {
       connection.destroy();
-      message.reply("🛑 RickBot has stopped and left the voice channel.");
+      message.reply("opgerot");
     } else {
       message.reply("I'm not in a voice channel right now.");
     }
@@ -78,4 +78,5 @@ client.on('messageCreate', async (message) => {
 
 // === LOGIN ===
 client.login(TOKEN);
+
 
